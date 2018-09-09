@@ -325,6 +325,11 @@ class TenderLimitedResourceTest(BaseTenderWebTest):
 
         ####  Set contract value
 
+        with open('docs/source/tutorial/tender-contract-get-contract-value.http', 'w') as self.app.file_obj:
+            response = self.app.get('/tenders/{}/contracts/{}'.format(
+                self.tender_id, self.contract_id))
+        self.assertEqual(response.status, '200 OK')
+
         with open('docs/source/tutorial/tender-contract-set-contract-value.http', 'w') as self.app.file_obj:
             response = self.app.patch_json('/tenders/{}/contracts/{}?acc_token={}'.format(
                 self.tender_id, self.contract_id, owner_token),
