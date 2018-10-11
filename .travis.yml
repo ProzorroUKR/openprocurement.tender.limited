@@ -24,7 +24,7 @@ before_install:
 install:
   - bin/buildout -N
 script:
-  - bin/nosetests
+  - bin/py.test ./openprocurement/tender/limited/tests/ --cov=openprocurement.tender.limited
   - bin/pylint --errors-only --disable=no-member,not-an-iterable,bad-super-call,unsubscriptable-object,too-many-format-args,function-redefined,duplicate-bases openprocurement.tender.limited
 after_success:
   - bin/coveralls
