@@ -652,7 +652,8 @@ def cancel_lot_with_complaint(self):
                                                        "address": {"countryName": "Україна", "postalCode": "21100",
                                                                    "region": "м. Вінниця",
                                                                    "streetAddress": "вул. Островського, 33",
-                                                                   "locality": "м. Вінниця"}}}})
+                                                                   "locality": "м. Вінниця"},
+                                                       "scale": "micro"}}})
     self.assertEqual(response.status, '201 Created')
 
     # Try to cancel lot
