@@ -104,7 +104,8 @@ supplier = {'data':
                     "scheme": "UA-EDR",
                     "uri": "http://sch10.edu.vn.ua/"
                 },
-                "name": "ДКП «Школяр»"
+                "name": "ДКП «Школяр»",
+                "scale": "micro"
             }
         ],
         "value": {
@@ -142,7 +143,8 @@ complaint = {
                 "scheme": "UA-EDR",
                 "uri": "http://sch10.edu.vn.ua/"
             },
-            "name": "ДКП «Школяр»"
+            "name": "ДКП «Школяр»",
+            "scale": "micro"
         },
         "description": "Умови виставлені замовником не містять достатньо інформації, щоб заявка мала сенс.",
         "title": "Недостатньо інформації"
